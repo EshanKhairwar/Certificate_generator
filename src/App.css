@@ -1,38 +1,102 @@
+* {
+  box-sizing: border-box;
+}
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  font-family: "Hachi Maru Pop", cursive;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 15px;
+}
+.App .Meta {
+  flex-grow: 1;
+  padding-right: 15px;
+}
+.App .Meta input {
+  font-family: inherit;
+  padding: 5px;
+  width: 100%;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.25);
+  border: 2px solid rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+.Meta .navbar{
+  background: #000;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  cursor: "pointer";
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Meta .navbar a{
+  text-decoration: none;
+  color: #f8f8f8;
+  margin: 20px;
+}
+
+.App .Meta button {
+  padding: 10px 15px;
+  border: 2px solid #87ceeb;
+  background-color: #33f3fb;
+  font-family: inherit;
+  margin: 20px 0;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.App #downloadWrapper {
+  padding: 20px;
+}
+.App #certificateWrapper {
+  box-shadow: 0 0 5px #000;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+.App #certificateWrapper img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.App #certificateWrapper #Uname {
+  font-family: "Staatliches", cursive;
+  margin: 0;
+  position: absolute;
+  left: 254px;
+  top: 244px;
+  font-size: 24pt;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.App #certificateWrapper #Course {
+  font-family: "Staatliches", cursive;
+  margin: 0;
+  position: absolute;
+  left: 472px;
+  top: 305px;
+  font-size: 12pt;
+  font-weight: bold;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.App #certificateWrapper #Date {
+  font-family: "Staatliches", cursive;
+  margin: 0;
+  position: absolute;
+  left: 193px;
+  top:533px;
+  font-size: 13pt;
+  font-weight: bold;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.App #certificateWrapper #Instructor {
+  font-family: "Staatliches", cursive;
+  margin: 0;
+  position: absolute;
+  left: 330px;
+  top:430px;
+  font-size: 13pt;
+  font-weight: bold;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
